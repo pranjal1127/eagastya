@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/animate.css">
     <!-- owl carousel CSS -->
     <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <!-- font awesome CSS -->
     <link rel="stylesheet" href="css/all.css">
     <!-- flaticon CSS -->
@@ -28,6 +29,7 @@
 </head>
 
 <body>
+    <!-- <div id="preloader"><div id="loader"></div></div> -->
     <!--::header part start::-->
     <header class="main_menu home_menu">
         <div class="container">
@@ -212,6 +214,81 @@
         </div>
     </section>
     <!-- banner part start-->
+   
+   
+    <div class="sec">
+      
+        <span class="fontline"></span>
+        <h3 class="sec-title">Shuddi</h3>
+        <span class="fontline"></span>
+    </div>
+
+    <section class="banner_part">
+        <div class="container">
+          
+            <div class="banner_slider owl-carousel">
+                <div class="single_banner_slider">
+                    <div class="banner_img">
+                        <img src="img/uv-1.jpg">
+                    </div>
+                </div>
+                <div class="single_banner_slider">
+                    <img src="img/5.png">
+                </div>
+                <div class="single_banner_slider">
+                    <img src="img/4.png">
+                </div>
+                <div class="single_banner_slider">
+                    <div class="banner_img" style="width: 100%;">
+                        <img src="img/banner_img.jpeg">
+                    </div>
+                </div>
+
+
+            </div>
+            </div></div>
+        </div>
+    </section>
+    <div class="sec">
+      
+        <span class="fontline"></span>
+        <h3 class="sec-title">Electrical Cycles</h3>
+        <span class="fontline"></span>
+    </div>
+
+    <section class="banner_part">
+        <div class="container">
+          
+            <div class="banner_slider owl-carousel">
+                <div class="single_banner_slider">
+                    <div class="banner_img">
+                        <img src="img/cycle-front.jpg">
+                    </div>
+                </div>
+                <div class="single_banner_slider">
+                    <img src="img/uv-2.jpg">
+                </div>
+                </div>
+
+
+            </div>
+            </div></div>
+        </div>
+    </section>
+    <div class="sec">
+      
+        <span class="fontline"></span>
+        <h3 class="sec-title">Video</h3>
+        <span class="fontline"></span>
+    </div>
+    <div class="container">
+        <video autoplay muted loop id="myVideo" >
+            <source src="img/Outer Space Video Zoom Virtual Background.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+
+    </div>
+    <!-- <video src="img/Outer Space Video Zoom Virtual Background.mp4" ></video> -->
 
     <!-- feature_part start-->
     <!-- <section class="feature_part padding_top">
@@ -267,7 +344,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-12">
                     <div class="section_tittle text-center">
-                        <h2>awesome <span>shop</span></h2>
+                        <h2>Awesome Products <span>shop</span></h2>
                     </div>
                 </div>
             </div>
@@ -528,7 +605,13 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         </div> -->
     </footer>
     <!--::footer_part end::-->
-
+    <script>
+        $(window).on('load', function() { // makes sure the whole site is loaded 
+            $('#loader').fadeOut(); // will first fade out the loading animation 
+            $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+            $('body').delay(350).css({'overflow':'visible'});
+            })
+   </script>
     <!-- jquery plugins here-->
     <script src="js/jquery-1.12.1.min.js"></script>
     <!-- popper js -->
@@ -555,6 +638,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/mail-script.js"></script>
     <!-- custom js -->
     <script src="js/custom.js"></script>
+    <script src="js/swiper.jquery.js"></script>
+    <script src="js/swiper.min.js"></script>
 </body>
 
 </html>
